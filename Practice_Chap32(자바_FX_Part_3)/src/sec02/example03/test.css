@@ -1,0 +1,28 @@
+
+/*TextField에 vhzjtmrk rkTdmf Eo */
+TextField:focused {
+	-fx-background-color: yellow;
+	-fx-border-color: red;
+	-fx-border-width: 2px;
+}
+
+/* 마우스가 Button에 올라가면 적용하는 코드 */
+Button:hover{
+	
+	
+	-fx-background-color: yellowgreen;
+	-fx-border-color: blue;
+	-fx-border-width: 1px;
+}
+
+
+/* 마우스가 Button을 클릭하면 적용하는 코드 */
+Button:pressed{
+	
+	
+	-fx-background-color: red;
+	-fx-border-color: blue;
+	-fx-border-width: 1px;
+}
+
+

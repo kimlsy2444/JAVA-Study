@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.*?>
+
+<HBox xmlns:fx="http://javafx.com/fxml/1" spacing="10" >
+	 
+	 <padding>
+	 	<Insets topRightBottomLeft="10"/>
+	 </padding>
+	 <children>
+	 	<TextField id="TestField" prefWidth="200"/>
+	 	<Button prefWidth="50" text="확인"/>
+	 	
+	 	
+	
+	 </children>
+</HBox>
+

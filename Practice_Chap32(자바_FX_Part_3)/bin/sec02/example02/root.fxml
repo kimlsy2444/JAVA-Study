@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.*?>
+
+
+<HBox xmlns:fx="http://javafx.com/fxml/1" prefHeight="50" prefWidth="500"
+	   alignment="CENTER" spacing="20">
+ 	
+ 	 <children>
+ 	 	<!-- id선택자 : id가 btnId이며 유일한 값으로 설정해주는게 좋다.
+ 	 		 중복해도 되지만 그런 용도로 사용을 하지 않는다. -->
+		<Button  id="btnId" text ="안녕하세요"/> 
+	 	
+	 	<!-- class선택자 : Button을 btnClass로 그룹을 지엇다 -->
+	 	<Button  styleClass="btnClass" text ="반갑습니다"/>
+	 	<Button  styleClass="btnClass" text ="복받으세요"/>
+		
+	
+		<Label text="라벨1"/>
+		<Label text="라벨2"/>
+		<Label text="라벨3"/>
+		
+	 </children>	
+</HBox>
+

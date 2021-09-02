@@ -1,0 +1,36 @@
+/*id가 vbox1인 스타일 적용  */
+
+#vbox1{
+	-fx-border-color: black;
+	-fx-border-width: 5px;
+}
+
+#vbox2{
+	-fx-border-color: red;
+	-fx-border-width: 3px;
+	/*모서리가 반지름 30 픽셀만큼 상태로 굴곡을 줌 */
+	-fx-border-radius: 20;
+}
+
+#vbox3{
+	/*제일 바깥 경계선 0을 기준으로 해서 내부 경계선 10 ,20만큼 경계선 추가 */
+	-fx-border-insets: 0,10,20;
+	-fx-border-color: red,blue,black;
+	-fx-border-width: 3px;
+}
+
+
+#vbox4{
+	-fx-border-insets: 0,10,20;
+	-fx-border-color: red,blue white blue white,black;
+	-fx-border-width: 5,3,1 5 5 1;
+
+}
+
+#vbox5{
+	
+	-fx-border-color: red;
+	-fx-border-width: 3px;
+	/* solid 실선 dotted 점선 dashed 다른 스타일의 점선  */
+	-fx-border-style: solid dotted
+}

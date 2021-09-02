@@ -1,0 +1,21 @@
+/* 전체 Label을 선택하여 적용을 하는 것이다 */
+
+Label {
+	-fx-padding:5;
+	-fx-background-color:blue;
+	-fx-text-fill : white;
+}
+
+/*id가 btnId인 것만 적용을 한다. */
+#btnId{
+	-fx-background-color: black;
+	-fx-text-fill: yellow;
+}
+
+/* class선택자를 이용하는 코드  */
+.btnClass{
+	
+	-fx-background-color: red;
+	-fx-text-fill: white;
+	
+} 

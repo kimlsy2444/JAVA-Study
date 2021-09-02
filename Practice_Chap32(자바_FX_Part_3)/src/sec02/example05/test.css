@@ -1,0 +1,32 @@
+
+#vbox1{
+	
+	-fx-background-color: #F70083 ;	
+}
+
+#vbox2{
+	-fx-border-color: black;
+	/* 배경색을 rgba() 를 이용해서 설정을 하였다.
+	 * reb에서 b가 2550니까 파란색이 나오고
+ 	 * 투명도가 0.8 이므로 약간 투명한 파란색이 나온다 */
+	-fx-background-color: rgba(0.0,0.0,255.0,0.8);	
+}
+
+#vbox3{
+	/*  배경색을 선형 그라디언트 형태로 주었고 top 방향으로 검정색으로 흰색으로 변경*/
+	-fx-background-color: linear-gradient(to top ,#000000,#ffffff) ;	
+}
+
+#vbox4{
+	/*이미지 파일로 배경을 설정하였다.*/
+	-fx-background-image : url("images/icon.gif");
+	
+	-fx-background-repeat: no-repeat ;
+}
+
+#vbox5{
+	/*이미지 파일로 배경을 설정하였다.*/
+	-fx-background-image : url("images/icon.gif");
+	-fx-background-repeat: no-repeat ;
+	-fx-background-position: center
+}

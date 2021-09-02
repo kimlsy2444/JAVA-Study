@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+
+<HBox xmlns:fx="http://javafx.com/fxml/1" prefHeight="50" prefWidth="400"
+	  alignment="CENTER" spacing="20">
+	 
+	 
+	 
+	 <!-- 인라인 스타일은 -fx-를 반드시 붙인다 ,속성몇 : 값을 넣는다
+	 	   스타일의 구분자는 세미콜론이 된다. 컨트롤이나 컨테이너가
+	 	   반복적으로 스타일을 지정하기 위해서 아래와 같이 중복적으로
+	 	   입력하게 되니 불편함이 발생한다. 하여 간단한 스타일을 인라인으로 하되
+	 	   반복적이고 복잡한것은 외부CSS 파일을 생성해서 적용하면 유지보수에 상당히 용이 -->
+	 <children>
+	 	<Button  text ="안녕하세요" style="-fx-background-color:red;
+	 			-fx-text-fill:blue;-fx-padding:5;"/>
+	 			
+	 	<Button  text ="반갑습니다" style="-fx-background-color:black;
+	 			-fx-text-fill:white;-fx-padding:5;"/>
+	 			
+		<Button  text ="복받으세요" style="-fx-background-color:blue;
+	 			-fx-text-fill:white;-fx-padding:5;"/>
+	 			
+	 	<Button text="새해"/>		
+	 </children>	
+	 	
+</HBox>
+
