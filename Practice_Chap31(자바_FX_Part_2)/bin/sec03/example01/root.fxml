@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Button?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="150" prefWidth="500"
+			fx:controller="sec03.example01.RootController">
+	 <padding>
+	 	<Insets topRightBottomLeft="10"/>
+	 </padding>
+	 
+	 <center>
+		<!-- BorderPane의 center부분에 컨트롤은 먼저 HBox로 잡고 , 체크박스를 나열하기
+			 위해 VBox를 사용 그리고 해당 이미지를 나타내기 위해
+			 ImageView를 만들었다-->
+	 	<HBox alignment="CENTER" prefHeight="100" prefWidth="200" spacing="10">
+	 		<children>
+	 			<VBox prefHeight="200" prefWidth="100" spacing="20" alignment="CENTER_LEFT">
+	 				<children>
+	 					<CheckBox  fx:id="chk1" text="안경" onAction="#handleChkAction"/>
+	 					<CheckBox  fx:id="chk2" text="모자" onAction="#handleChkAction"/>
+	 				</children>
+	 			</VBox>
+	 				<ImageView fx:id="chkImageView" fitHeight="100" fitWidth="100" preserveRatio="true">
+	 					<image>
+	 						<Image url="@images/geek.gif"/>
+	 					</image>
+	 				</ImageView>
+	 				
+	 				<!-- 구분선을 주기 위해 Separator를 사용하고 속성으로 수직을 설정하였다. -->
+	 				<Separator orientation="VERTICAL" prefHeight="200"/>
+	 				
+	 				<VBox prefHeight="200" prefWidth="150" spacing="20" alignment="CENTER_LEFT">
+	 					<!-- 라디오버튼은 통상 그룹을 만들어서 속성감시를 하기 때문에
+	 						 아래와 같이 그룹을 정의 하고 fx:id 설정한다. -->
+	 					<fx:define>
+	 					<!-- 통상 예외 발생 코드 중에서 valid-type이 나오면, import가 안된것이다. -->
+	 						<ToggleGroup fx:id="group"/>
+	 					</fx:define>
+	 					<children>
+	 						<!--  라디오 버튼의 소속 그룹이 group이고 
+	 							  selected 속성은 로딩이 될때 보여지도록 한다
+	 							  userData속성은 라디오 버튼의 속성감시를하는데
+	 							  속성이 변하면 컨트롤러 직접 사용될 것이다. -->
+	 						<RadioButton text="Bubble차트" userData="BubbleChart.png"
+	 									 toggleGroup="$group"/>	
+	 									 
+	 						<RadioButton text="Bar차트" userData="BarChart.png"
+	 									 toggleGroup="$group" selected="true"/>	
+	 									 
+	 						<RadioButton text="Area차트" userData="AreaChart.png"
+	 									 toggleGroup="$group"/>	
+	 					</children>
+	 				</VBox>
+	 				
+	 				<ImageView fx:id="radioImageView" fitWidth="100" preserveRatio="true">
+	 					<image>
+	 						<Image url="@images/BarChart.png"/>
+	 					</image>
+	 				</ImageView>
+	 				
+	 		</children>
+	 	</HBox>
+	 </center>
+	 
+	 <bottom>
+	 	<Button BorderPane.alignment="CENTER" onAction="#handleBtnExitAction">
+	 		<graphic>
+	 			<ImageView>
+	 				<Image url="@images/exit.png"/>
+	 			</ImageView>
+	 		</graphic>
+	 		<BorderPane.margin>
+	 			<Insets top="20"/>
+	 		</BorderPane.margin>
+	 	</Button>
+	 </bottom>
+
+</BorderPane>
+

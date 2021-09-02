@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.image.Image?>
+
+<AnchorPane prefHeight="420.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+			 fx:controller="sec03.example05.RootController">
+   <children>
+      <StackPane layoutY="14.0" prefHeight="370.0" prefWidth="514.0">
+         <children>
+            <ImageView fx:id="imageView" fitHeight="280.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+            	<image>
+            		<Image url="@media/audio.png" />
+            	</image>
+            </ImageView>
+            
+                
+            <MediaView fx:id="mediaView" fitHeight="370.0" fitWidth="500.0" />
+         </children>
+      </StackPane>
+      <Button fx:id="btnPlay" layoutX="70.0" layoutY="385.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" text="재생" />
+      <Button fx:id="btnStop" layoutX="381.0" layoutY="385.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" text="중지" />
+      <Button fx:id="btnPause" layoutX="222.0" layoutY="385.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" text="일시정지" />
+   </children>
+</AnchorPane>

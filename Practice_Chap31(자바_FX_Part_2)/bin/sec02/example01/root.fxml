@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sec02.example01.RootController">
+   <children>
+      <VBox alignment="CENTER" layoutX="-6.0" prefHeight="350.0" prefWidth="600.0" spacing="20.0">
+         <children>
+            <Label fx:id="label1" alignment="CENTER" text="2020년에도 자바 공부를">
+           		<font>
+            		<Font size="0"/>
+           		</font>
+            </Label>
+            
+            <Label fx:id="label2" text="열심히 하자" >
+            	<font>
+            		<Font size="0"/>
+            	</font>
+            </Label>
+         </children>
+         </VBox>
+      <Slider fx:id="slider" layoutY="380.0" prefWidth="600.0" />
+   </children>
+</AnchorPane>

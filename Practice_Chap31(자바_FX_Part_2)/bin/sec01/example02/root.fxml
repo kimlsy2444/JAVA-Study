@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<!-- 이벤트 처리를 하게 될 컨트롤러를 지정한다.
+	  여기서는 root.fxml파일이니 패키지명. RootController 라고 지정하였다. -->
+<VBox xmlns:fx="http://javafx.com/fxml/1" prefHeight="200" prefWidth="100"
+	alignment="CENTER" spacing="20"
+	fx:controller="sec01.example02.RootController">
+ 	
+ 	<children>
+ 		<!-- RootController.java파일에서 아래의 컨트롤의 참조를 얻어가기 위해
+ 		각 컨트롤에다가 fx:id 속성을 주고 id 값을 지정했다. -->
+ 		
+ 		<Button fx:id="button1" text="Button1"/>
+ 		<Button fx:id="button2" text="Button2"/>
+ 		<Button fx:id="button3" text="Button3"/>
+ 		
+ 		<!-- 버튼 4는 fx:id를 이용하는 것이 아니라 직접 메서드를 매핑하여 호출한다
+ 		하지만 통상적으로 아래와 같이 하는 것 보다 위와 같이 명시적으로 표현 하는것이 좋다.
+ 		가독성 측면 에서 좋다.
+ 		많아지면 해당 스크립트를 찾을 수 가 없음;; -->
+ 		
+ 		<Button text="Button4" onAction="#buttonHandle4"/>
+ 		
+ 	</children>
+ 	
+ 
+</VBox>
+

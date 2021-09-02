@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.collections.*?>
+
+
+<AnchorPane prefHeight="436.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+			fx:controller="sec03.example02.RootController">
+   <children>
+      <Label layoutX="66.0" layoutY="53.0" text="제목" />
+      <TextField fx:id="txtTitle" layoutX="119.0" layoutY="49.0" prefHeight="23.0" prefWidth="357.0" />
+     
+      <Label layoutX="66.0" layoutY="93.0" text="비밀번호" />
+      <PasswordField fx:id="txtPassword" layoutX="119.0" layoutY="89.0" />
+     
+      <Label layoutX="66.0" layoutY="136.0" text="공개" />
+      <ComboBox fx:id="comboTxt" layoutX="119.0" layoutY="132.0" 
+      			prefHeight="23.0" prefWidth="85.0" promptText="선택">
+     			
+     			<items>
+     			<!-- FXCollections가 속한 패키지는 javafx.collections에 속하고있다
+     				  추가적으로 이부분을 import해주자. 콤보박스에 리스트 내용은
+     				  FXML에서 직접 작성하도록 했다 (정적) -->
+     			<FXCollections fx:factory="observableArrayList">
+     				<String fx:value="공개"/>
+     				<String fx:value="비공개"/>
+     			</FXCollections>
+     			</items>
+     			
+     </ComboBox>
+  
+     
+      <Label layoutX="233.0" layoutY="136.0" text="게시 종료일" />
+      <DatePicker fx:id="date" layoutX="313.0" layoutY="132.0" promptText="날짜를 선택하세요"/>
+      
+      <Label layoutX="66.0" layoutY="185.0" text="내용" />
+      <TextArea fx:id="textArea" layoutX="66.0" layoutY="210.0" prefHeight="151.0" prefWidth="408.0" />
+     
+      <Separator layoutX="66.0" layoutY="372.0" prefHeight="1.0" prefWidth="408.0" />
+      
+      <Button layoutX="177.0" layoutY="388.0"  text="등록" onAction="#handleBtnPrint"/>
+      <Button layoutX="313.0" layoutY="388.0"  text="취소" onAction="#handleBtnExit"/>
+   </children>
+</AnchorPane>

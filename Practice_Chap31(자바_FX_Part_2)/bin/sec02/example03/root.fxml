@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="200" prefWidth="300"
+			fx:controller="sec02.example03.RootController">
+			
+		<children>
+			<!-- 0행 관련된 내용 기술 -->
+			<Label alignment="CENTER" text="10진수" prefWidth="150"
+			 GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+			<Label alignment="CENTER" text="2진수" prefWidth="150"
+			 GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+			 
+			<!-- 1행 관련된 내용 기술 -->
+			<TextArea fx:id="textA10_1" prefWidth="150" prefHeight="50"
+			 GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+			<TextArea fx:id="textA2_1" prefWidth="150" prefHeight="50"
+			 GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+			
+			<!-- 2행 관련된 내용 기술 -->
+			<Label alignment="CENTER" text="10진수" prefWidth="150" 
+			GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+			<Label alignment="CENTER" text="8진수" prefWidth="150"
+			 GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+			 
+			<!-- 3행 관련된 내용 기술 -->
+			<TextArea fx:id="textA10_2" prefWidth="150" prefHeight="50"
+			 GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+			<TextArea fx:id="textA8_2" prefWidth="150" prefHeight="50" 
+			GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+			
+			<!-- 4행 관련된 내용 기술 -->
+			<Label alignment="CENTER" text="10진수" prefWidth="150"
+			 GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+			<Label alignment="CENTER" text="16진수" prefWidth="150"
+			 GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+			 
+			<!-- 5행 관련된 내용 기술 -->
+			<TextArea fx:id="textA10_3" prefWidth="150" prefHeight="50"
+			 GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+			<TextArea fx:id="textA16_3" prefWidth="150" prefHeight="50" 
+			GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+			
+			
+			
+			
+		</children>
+			
+	 
+</GridPane>
+

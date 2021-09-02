@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.image.Image?>
+
+<AnchorPane prefHeight="320.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sec03.example06.RootController">
+   <children>
+      <StackPane prefHeight="280.0" prefWidth="470.0">
+         <children>
+            <ImageView fx:id="imageView" fitHeight="280.0" fitWidth="470.0" pickOnBounds="true" preserveRatio="true">
+            	<image>
+            		<Image url="@media/audio.png" />
+            	</image>
+            </ImageView>
+            <MediaView fx:id="mediaView" fitHeight="280.0" fitWidth="470.0" />
+         </children>
+      </StackPane>
+      <Button fx:id="btnPlay" layoutX="484.0" layoutY="23.0" mnemonicParsing="false" prefWidth="100.0" text="재생" />
+      <Button fx:id="btnPause" layoutX="484.0" layoutY="63.0" mnemonicParsing="false" prefWidth="100.0" text="일시정지" />
+      <Button fx:id="btnStop" layoutX="484.0" layoutY="101.0" mnemonicParsing="false" prefWidth="100.0" text="정지" />
+      <Label layoutX="519.0" layoutY="141.0" text="시간">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ProgressBar fx:id="progressBar" layoutX="479.0" layoutY="166.0" prefHeight="20.0" prefWidth="110.0" progress="0.0" />
+      <Label fx:id="labelTime" layoutX="513.0" layoutY="186.0" text="0/0sec" />
+      <ProgressIndicator fx:id="progressIndicator" layoutX="484.0" layoutY="207.0" prefHeight="60.0" prefWidth="100.0" progress="0.0" />
+      <Label layoutX="521.0" layoutY="273.0" text="볼륨" />
+    <Slider fx:id="sliderVolume" layoutX="487.0" layoutY="291.0" prefWidth="100.0" showTickLabels="true" showTickMarks="true" />
+      <Slider fx:id="sliderMedia" layoutX="2.0" layoutY="309.0" prefHeight="14.0" prefWidth="470.0" />
+    
+   </children>
+</AnchorPane>
