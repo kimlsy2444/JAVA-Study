@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Button?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="300" prefWidth="500"
+			fx:controller="sec02.example03.ServerController">
+	 <center>
+	 	<TextArea fx:id="txtDisplay"/>
+	 </center>
+	 
+	<bottom>
+		<Button fx:id="btnStartStop" prefHeight="30" prefWidth="500" text ="start"/>
+	
+	</bottom>
+	 
+	 
+	 
+</BorderPane>
+
