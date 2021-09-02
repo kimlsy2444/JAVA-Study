@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+
+<HBox prefHeight="0.0" prefWidth="320.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+<!-- Ctrl + space를 누르면 intelligence기능이 나온다.
+속성이나 컨트롤, 컨테이너 등
+주석 처리하고자 하는 곳을 선택해서 Ctrl + Shift + / 를 누르면 
+자동 주석 처리가 된다. -->
+	<padding>  <!-- 안쪽여백 설정 태그 -->
+		<Insets topRightBottomLeft="10" />	
+	</padding>
+	
+	<spacing>10</spacing>  <!-- HBox에 배치되는 컨트롤의 간격을 10픽셀 -->
+	<!-- 컨트롤 추가 -->
+	<children>
+		<!-- <TextField prefWidth="200" /> -->
+		<TextField>
+			<prefWidth>200</prefWidth>			
+		</TextField>
+		
+		<!-- <Button text="확인" /> -->
+		<Button>
+			<text>확인</text>
+		</Button>
+		
+		<Button text="취소" />	
+	</children>
+</HBox>

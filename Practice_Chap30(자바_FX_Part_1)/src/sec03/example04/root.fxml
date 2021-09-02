@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+
+<!-- 크기가 300,70 픽셀인 컨테이너를 만들어서, 배치될 컨트롤들의
+	수평 수직 간격을 10 픽셀로 만들어라  -->
+<FlowPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="70" prefWidth="300" hgap="10" vgap="10">
+
+	
+	<padding>
+		<Insets topRightBottomLeft="10"/>
+	</padding>
+	
+	<children>
+		<Button text="버튼1"/>
+		<Button text="버튼2"/>
+		<Button text="버튼3"/>
+		<Button text="버튼4"/>
+		<Button text="버튼5"/>
+		<Button text="버튼6"/>
+		<Button text="버튼7"/>
+		<Button text="버튼8"/>
+	</children>
+</FlowPane>
+

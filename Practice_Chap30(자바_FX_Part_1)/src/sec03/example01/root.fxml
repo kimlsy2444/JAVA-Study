@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="150.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+     <!-- 루트 컨테이너로  AnchorPane 을 사용한다면 ScneneBuilder를 이용하자-->
+      <Label layoutX="50.0" layoutY="29.0" text="아이디" />
+      <TextField layoutX="105.0" layoutY="24.0" prefHeight="23.0" prefWidth="158.0" />
+      <Label layoutX="50.0" layoutY="69.0" text="패스워드" />
+      <!-- 패스워드 필드 컨트롤 이용을 하면 사용자가 입력한 값이 노출 되지 않는다. -->
+      <PasswordField layoutX="104.0" layoutY="64.0" prefHeight="23.0" prefWidth="158.0" />
+      
+      
+      <Button layoutX="60.0" layoutY="103.0" mnemonicParsing="false" text="로그인" />
+      <Button layoutX="130.0" layoutY="103.0" mnemonicParsing="false" text="취소" />
+      
+      <Button layoutX="193.0" layoutY="103.0" mnemonicParsing="false" text="회원가입" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" spacing="10">
+	
+	<children>
+	<!-- 그림은 가로와 세로의 비율이 원래 존재한다. 그림이 깨지지 않도록 원본을
+	유지하기 위해서 preserveRatio를 true 로 설정을 해주면 된다
+	false를 설정하게 되면 그림의 비율이 깨진다 
+	고정된 폭을 주니까 preserveRatio를 false를 설정하게 되면 원본 이미지가 깨지고
+	주어진 크기 대로 맞추어진다. -->
+		<ImageView fitHeight="150" fitWidth="300" preserveRatio="false">
+			
+       <image>
+         	<!-- 이미지의 경로(기준점이 자신의 파일이다. 즉, 상대경로이다. 
+         	     @는 참조하겠다는 의미이다. -->
+            <Image url="@images/송하영.jpg" />  
+         </image>
+        </ImageView>
+			
+			<HBox alignment="TOP_CENTER" spacing="20">
+				<children>
+					<Button text="송하영>>>>>>>>>"/>
+					<Button text="다음">
+					
+					<!-- 폭을 확장한다 -->
+					<HBox.hgrow>
+						<Priority fx:constant="ALWAYS" />
+					</HBox.hgrow>
+					<!-- 상수를 이용하여 폭을 넓게 잡아주고 있다. -->
+						<maxWidth>
+							<Double fx:constant="MAX_VALUE" />
+						</maxWidth>
+					</Button>
+				</children>
+				<padding>
+					<Insets topRightBottomLeft ="10" />
+				</padding>
+			</HBox>
+	</children>
+</VBox>
+
+
